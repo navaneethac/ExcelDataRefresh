@@ -16,9 +16,10 @@ namespace ExcelDataRefresh
             //• The file name or path does not exist.
             //• The file is being used by another program.
             //• The workbook you are trying to save has the same name as a currently open workbook.
-    /// Verify if user has required permissions or not. If user has permissions but still this error is observed
-    /// creating below folders based on the Excel version installed on the machine seems to b solving the issue
-    /// c:\windows\system32\config\systemprofile\desktop , c:\windows\syswow64\config\systemprofile\desktop
+    /// Verify if user has required permissions or not. If user has permissions but still this error is observed follow below step.
+    /// create 'desktop' folder in below path based on your Office Excel installed version (i.e. 32bit or 64bit)  
+    /// 32bit  -  c:\windows\system32\config\systemprofile\desktop 
+    /// 64bit -  c:\windows\syswow64\config\systemprofile\desktop
     /// </summary>
     class Program
     {
